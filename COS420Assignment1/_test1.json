@@ -1,0 +1,362 @@
+{
+  "9203": {
+    "id": 9203,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "63151": {
+    "id": 63151,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "16147": {
+    "id": 16147,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "21613": {
+    "id": 21613,
+    "myInteger": 55,
+    "myString": "A New String"
+  },
+  "42420": {
+    "id": 42420,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "170": {
+    "id": 170,
+    "myInteger": 2,
+    "myString": "a string"
+  },
+  "188": {
+    "id": 188,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "189": {
+    "id": 189,
+    "myInteger": 2,
+    "myString": "a string"
+  },
+  "190": {
+    "id": 190,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "356": {
+    "id": 356,
+    "myInteger": 2,
+    "myString": "a string"
+  },
+  "9626": {
+    "id": 9626,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "82576": {
+    "id": 82576,
+    "myInteger": 55,
+    "myString": "A New String"
+  },
+  "96068": {
+    "id": 96068,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "8386": {
+    "id": 8386,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "57627": {
+    "id": 57627,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "587": {
+    "id": 587,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "588": {
+    "id": 588,
+    "myInteger": 2,
+    "myString": "a string"
+  },
+  "589": {
+    "id": 589,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "590": {
+    "id": 590,
+    "myInteger": 2,
+    "myString": "a string"
+  },
+  "95214": {
+    "id": 95214,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "78959": {
+    "id": 78959,
+    "myInteger": 55,
+    "myString": "A New String"
+  },
+  "34913": {
+    "id": 34913,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "18593": {
+    "id": 18593,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "56143": {
+    "id": 56143,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "1049": {
+    "id": 1049,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "1050": {
+    "id": 1050,
+    "myInteger": 2,
+    "myString": "a string"
+  },
+  "1051": {
+    "id": 1051,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "114": {
+    "id": 114,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "115": {
+    "id": 115,
+    "myInteger": 2,
+    "myString": "a string"
+  },
+  "116": {
+    "id": 116,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "61462": {
+    "id": 61462,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "66159": {
+    "id": 66159,
+    "myInteger": 55,
+    "myString": "A New String"
+  },
+  "2044": {
+    "id": 2044,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "519": {
+    "id": 519,
+    "myInteger": 2,
+    "myString": "a string"
+  },
+  "4886": {
+    "id": 4886,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "32874": {
+    "id": 32874,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "27549": {
+    "id": 27549,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "72120": {
+    "id": 72120,
+    "myInteger": 55,
+    "myString": "A New String"
+  },
+  "91134": {
+    "id": 91134,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "1140": {
+    "id": 1140,
+    "myInteger": 2,
+    "myString": "a string"
+  },
+  "35432": {
+    "id": 35432,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "15415": {
+    "id": 15415,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "1672": {
+    "id": 1672,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "1673": {
+    "id": 1673,
+    "myInteger": 2,
+    "myString": "a string"
+  },
+  "1674": {
+    "id": 1674,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "1065": {
+    "id": 1065,
+    "myInteger": 2,
+    "myString": "a string"
+  },
+  "83039": {
+    "id": 83039,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "99128": {
+    "id": 99128,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "3292": {
+    "id": 3292,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "80201": {
+    "id": 80201,
+    "myInteger": 55,
+    "myString": "A New String"
+  },
+  "8600": {
+    "id": 8600,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "1939": {
+    "id": 1939,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "1940": {
+    "id": 1940,
+    "myInteger": 2,
+    "myString": "a string"
+  },
+  "1941": {
+    "id": 1941,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "1299": {
+    "id": 1299,
+    "myInteger": 2,
+    "myString": "a string"
+  },
+  "12084": {
+    "id": 12084,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "49572": {
+    "id": 49572,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "6182": {
+    "id": 6182,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "5191": {
+    "id": 5191,
+    "myInteger": 55,
+    "myString": "A New String"
+  },
+  "81676": {
+    "id": 81676,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "2509": {
+    "id": 2509,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "2510": {
+    "id": 2510,
+    "myInteger": 2,
+    "myString": "a string"
+  },
+  "2511": {
+    "id": 2511,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "1536": {
+    "id": 1536,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "1537": {
+    "id": 1537,
+    "myInteger": 2,
+    "myString": "a string"
+  },
+  "1538": {
+    "id": 1538,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "34198": {
+    "id": 34198,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "73788": {
+    "id": 73788,
+    "myInteger": 55,
+    "myString": "A New String"
+  },
+  "45159": {
+    "id": 45159,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "29354": {
+    "id": 29354,
+    "myInteger": 1,
+    "myString": "a string"
+  },
+  "30233": {
+    "id": 30233,
+    "myInteger": 3,
+    "myString": "a string"
+  },
+  "3102": {
+    "id": 3102,
+    "myInteger": 2,
+    "myString": "a string"
+  }
+}

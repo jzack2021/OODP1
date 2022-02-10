@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": 1,
+    "myInteger": 1,
+    "myString": "",
+    "StringCust": "jon"
+  },
+  "2": {
+    "id": 2,
+    "myInteger": 1,
+    "myString": "bike",
+    "StringCust": "jon"
+  }
+}
