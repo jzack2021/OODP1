@@ -1,5 +1,7 @@
 package edu.usm.cos420.example1;
 
+import java.util.ArrayList;
+
 import edu.usm.cos420.example1.controller.CItemController;
 import edu.usm.cos420.example1.dao.GenericDao;
 import edu.usm.cos420.example1.dao.JsonDao;
@@ -7,7 +9,8 @@ import edu.usm.cos420.example1.domain.CItem;
 import edu.usm.cos420.example1.service.ExampleService;
 import edu.usm.cos420.example1.service.impl.Example1Service;
 import edu.usm.cos420.example1.view.impl.CItemView;
-
+import java.util.Iterator;
+import java.util.List;
 /**
  * Top level application class that coordinates the calls to view and Controller
  *
@@ -21,13 +24,16 @@ public class App
 	public static void main( String[] args )
     {
 		ExampleService service = new Example1Service();
+		
 		CItemView citemView = new CItemView();
 	//	CItem hey4 = new CItem();
 	//	CItem hey2 = new CItem(23, "yo");
 	//	CItemController hey3 = new CItemController(hey2);
-		CItemController controller = new CItemController(citemView, service);		
+	
+		
+		CItemController controller = new CItemController(citemView, service);	
 	//	controller.provideCItemAccess();
-	controller.executeChoice(1);
+controller.executeChoice(9);
 	
 	
 	

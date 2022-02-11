@@ -31,7 +31,7 @@ public class Example1Service implements ExampleService {
 
 	CItemDao dao;
 	static File file = new File("citem.json");
-	ArrayList<String> stuff;
+    List<String> stuff = new ArrayList<>();
 	static Integer ItemStockAmount = 0;
 	static String Item;
 	static String Customer;
@@ -41,25 +41,25 @@ public class Example1Service implements ExampleService {
 	/**
 	 * Default Constructor creates a default CItemDao object
 	 */
-	
-	
+
 	public Example1Service()
 	
 	{
 		
 		this.dao = new CItemDao();
-	
+		JSONTOLIST();
+		this.stuff = new ArrayList<>();
+		
 	}
 
-
 	
 
-	
 	public static String setItem(Scanner sc) {
 		System.out.flush();
 	
 	      System.out.println("Enter Item");
 	      Item = sc.next();
+	      Customer="x";
 	    return Item;
 		
 	
@@ -67,7 +67,10 @@ public class Example1Service implements ExampleService {
 		
 		
 	}
-	
+	public String setItem() {
+		return Item;
+	}
+		
 	
 	public static String setCust(Scanner sc) {
 		System.out.flush();
@@ -117,25 +120,7 @@ public class Example1Service implements ExampleService {
 //}
 	
 	
-	public  String chooseItemforStockAdd(Scanner sc) {
-		
-		System.out.flush();
 
-		
-		
-		
-	      System.out.println("Add Stock to which item");
-	      for (int i = 0; i < 1000; i+=5) {
-			  System.out.print(stuff.get(i));
-			}
-		
-	      Item = sc.next();
-	    return Item;
-		
-	
-	      }
-	
-		
 		
 	
 	
@@ -164,7 +149,7 @@ public class Example1Service implements ExampleService {
 		//System.out.println(mymymy);
 		
 		
-		System.out.println("ITEM ADDED TO INVENTORY" + " ID " + ItemID + "  " + ItemStockAmount + " in stock");
+		System.out.println("Item Added");
 		
 		
 		
@@ -176,11 +161,11 @@ public class Example1Service implements ExampleService {
 
 	// Object obj = new JSONParser().parse(new FileReader("JSONExample.json"));
 
-    public static void JSONTOLIST() {
+    public void JSONTOLIST() {
 		
 
-		List<String> stuff = new ArrayList<>();
-		System.out.print(stuff);
+		
+		
 		BufferedReader br = null;
     
 		try {
@@ -197,11 +182,46 @@ public class Example1Service implements ExampleService {
 		} catch (IOException e) {
 			e.printStackTrace();
 		} 
-		System.out.print(stuff);
+		//System.out.print(stuff);
     }
+	
+	
+    public void ShowItemsInFile() {
+    	 for (int i = 4; i < stuff.size(); i+=6) {
+ 			
+ 	    	
+ 	    	System.out.print(stuff.get(i));}
+ 			
+ 	    }
+    
+    public void ShowCustomersInFile() {
+   	 for (int i = 5; i < stuff.size(); i+=6) {
+			
+	    	
+	    	System.out.print(stuff.get(i));}
+			
+	    }
+   
+    
+	public String chooseItemforStockAdd(String Item, Scanner sc) {
 		
-	
-	
+		System.out.flush();
+   
+	    System.out.println("Add Stock +1 to which item");
+	      
+ for (int i = 4; i < stuff.size(); i+=6) {
+			
+	    	
+	    	System.out.print(stuff.get(i));
+			
+	    }
+		
+	     Item = sc.next();
+	     
+	  	return Item;
+
+		
+	}
 	public List<CItem> getAll()
 	{
 		return dao.list();

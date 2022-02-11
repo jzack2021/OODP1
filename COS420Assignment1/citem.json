@@ -9,6 +9,30 @@
     "id": 2,
     "myInteger": 1,
     "myString": "bike",
-    "StringCust": "jon"
+    "StringCust": "fred"
+  },
+  "3": {
+    "id": 3,
+    "myInteger": 1,
+    "myString": "car",
+    "StringCust": "joe"
+  },
+  "4": {
+    "id": 4,
+    "myInteger": 1,
+    "myString": "no",
+    "StringCust": "customer"
+  },
+  "5": {
+    "id": 5,
+    "myInteger": 1,
+    "myString": "microphone",
+    "StringCust": "none"
+  },
+  "6": {
+    "id": 6,
+    "myInteger": 1,
+    "myString": "kitty",
+    "StringCust": "cat"
   }
 }

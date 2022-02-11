@@ -1,18 +1,15 @@
 package edu.usm.cos420.example1.controller;
 
-import edu.usm.cos420.example1.dao.GenericDao;
+import java.util.List;
 
-import edu.usm.cos420.example1.dao.JsonDao;
-import edu.usm.cos420.example1.dao.domain.CItemDao;
 import edu.usm.cos420.example1.domain.CItem;
 import edu.usm.cos420.example1.service.ExampleService;
 import edu.usm.cos420.example1.service.impl.Example1Service;
-import edu.usm.cos420.example1.service.impl.let;
 import edu.usm.cos420.example1.view.impl.CItemView;
+import edu.usm.cos420.example1.dao.domain.CItemDao;
 import java.util.Scanner;
-import java.io.File;
-import java.io.ObjectOutputStream;
-import java.io.*;
+import edu.usm.cos420.example1.controller.CItemController;
+
 /**
  *   A Controller class to execute user's menu choice.
  *     List of possible choices can be found at {@link edu.usm.cos420.example1.view.TextUI}
@@ -21,11 +18,13 @@ import java.io.*;
 public class CItemController {
 
 	private ExampleService atMyService; 
+	//private ExampleService atMyService2;
 	private CItemView view;
 	private CItemDao Dao;
 	private CItem CItem;
 	Scanner sc = new Scanner(System.in);
 static String Item;
+static String Customer;
 static Integer ItemNumber;
 	static Long g;
 	String fname;
@@ -41,7 +40,7 @@ static Integer ItemNumber;
 	{
 		this.view = view;
 		this.atMyService = service;
-		
+	
 	}
 
 	public CItemController(CItemDao Dao) {
@@ -51,13 +50,13 @@ static Integer ItemNumber;
 		
 		this.CItem=CItem;
 	}
-	
-	
+
 	
 	/**
 	 * Allow the user to access the citem collection
 	 * 
 	 */
+	
   //  public void provideCItemAccess()
   //  {
     //    int choice = CItemView.NO_CHOICE;
@@ -75,96 +74,76 @@ static Integer ItemNumber;
  	 */
 	public void executeChoice (int choice) {
 	    System.out.println();
+	   
+	    
 	    view.displayMenu();
+		
+	   
+	    
+	    atMyService.JSONTOLIST();
+	  
+	    
 	    choice = view.readIntWithPrompt("Enter choice: ");
+	  
+	    
 	    //      executeChoice(choice);
-	    if (choice == CItemView.TWO)
-	    {
-	  
-	    	
-	    	
-	 //   	System.out.print("Item");
-	    	
-	//    	Item=sc.nextLine();
-	    	
-	   // 	 edu.usm.cos420.example1.service.impl.Example1Service.setItem(Item);
-	    	
-	    	
-	   
-	 // ObjectOutputStream.nullOutputStream();
-	 
-	 
-	  
-	     
-	     
-	//       System.out.println("Item Number");
-	      
-	      
-	//     ItemNumber = sc.nextInt();
-	      
-	     
-	   
-	 
+
 	    
-	    	  
-	  Example1Service.setItem(sc);
-	      
-	     Example1Service.setCust(sc);
-	      
-	
-		
-			
-			
-		
-	      
-
-
-	  
-	    //ystem.out.print("item added");
-	    
-	    	
-	     atMyService.getAll();
-	     System.out.println(atMyService.getAll());
-	 
-	    	atMyService.addACItem();
-	   
-	    //	atMyService.maxCItemId();
-	      //tMyService.determineNumberOfObjectsInStream();
-	     //Dao.list();
-	   // 	System.out.println(atMyService.maxCItemId().MAX_VALUE);
-     
-	   
-	   
-	   	 
-	   	  
-
-	 
-	   
-	   	    
-	   	   
+	    if (choice == CItemView.ADDONE) {
+	System.out.println("Customer Name?");
+	Example1Service.setCust(sc);
+	 atMyService.addACItem();
 	    }
-	    else if (choice == CItemView.EXIT)
-	      System.out.println("Goodbye.");
+ 
+           else if (choice == CItemView.TWO)
+           {
+        	   Example1Service.setItem(sc);
+        	   Example1Service.setCust(sc);//just filler to make the scanner give square values
+        	   atMyService.addACItem();
+	 
+	  
+	    }
+	 
 	    else if (choice == CItemView.THREE) {
 	  
+	    	 atMyService.JSONTOLIST();
+	    	 
+	    	atMyService.chooseItemforStockAdd(Item, sc);
 	    	
-	    	Example1Service.JSONTOLIST();
 	    	
-	    	
-	    
-	    	
-	    
-	    	
-	    }
-	    else if (choice == CItemView.ADDONE) {
-	    	Example1Service.setCust(sc);
 	    	atMyService.addACItem();
-	    }
-	    else if (choice == CItemView.FOUR) {
-	    	Example1Service.JSONTOLIST();
+	    	
+	    
 	    	
 	    }
+	   
+	    else if (choice == CItemView.FOUR) {
+	    	 atMyService.JSONTOLIST();
+	    	System.out.println("Which Item?");
+	    	atMyService.ShowItemsInFile();
+	    	Item = sc.next();
+	    	System.out.println("Item Ordered");
+	    	
 	    }
-	  }
-	  
-
+	    else if (choice == CItemView.FIVEL) {
+	    	 atMyService.JSONTOLIST();
+	    	 System.out.println("Which Customer?");
+	    	  atMyService.ShowCustomersInFile();
+	    	  Item = sc.next();
+	    	  
+	    }
+	    else if (choice == CItemView.SIX) {
+	    	atMyService.ShowItemsInFile();
+		    
+	    }
+	    else if (choice == CItemView.SEVEN) {
+	    	atMyService.ShowCustomersInFile();
+		    
+	    }
+	    
+	    else if (choice == CItemView.EXIT) {
+	       	
+		      System.out.println("Goodbye.");
+	    }
+}
+}

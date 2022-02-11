@@ -1,9 +1,9 @@
 package edu.usm.cos420.example1.service;
-
+import java.util.Scanner;
 import java.util.List;
 
 import edu.usm.cos420.example1.domain.CItem;
-
+import java.util.Scanner;
 /**
  * 
  *  The Example1 Service Interface is based a design pattern
@@ -17,6 +17,18 @@ public interface ExampleService {
 	/**
 	 * Add a randomly generated CItem element to the repository
 	 */
+	public void JSONTOLIST();
+	
+	public String chooseItemforStockAdd(String Item, Scanner sc);
+	
+	public void ShowItemsInFile();
+	
+	
+	public String setItem();
+	
+	
+	  public void ShowCustomersInFile();
+	
     public void addACItem();
 	/**
 	 * return the list of CItems from the repository
